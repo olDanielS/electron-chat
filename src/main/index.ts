@@ -8,6 +8,9 @@ function createWindow(): void {
   const mainWindow = new BrowserWindow({
     width: 900,
     height: 670,
+    backgroundColor: '#FFFFFF',
+    minWidth: 780,
+    minHeight: 670,
     show: false,
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
@@ -19,6 +22,7 @@ function createWindow(): void {
 
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()
+    
   })
 
   mainWindow.webContents.setWindowOpenHandler((details) => {

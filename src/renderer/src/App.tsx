@@ -1,10 +1,11 @@
+import './styles/global.css';
+import SignIn from './pages/SignIn';
+//import SignUp from './pages/SignUp';
+
 function App() {
   return (
     <>
-      <div className="bg-gray-800">
-        <h1 className="text-red-800">Hello world</h1>
-      </div>
-
+     <SignIn/>
     </>
   )
 }
