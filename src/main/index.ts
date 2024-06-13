@@ -9,7 +9,7 @@ function createWindow(): void {
     width: 900,
     height: 670,
     backgroundColor: '#FFFFFF',
-    minWidth: 780,
+    minWidth: 880,
     minHeight: 670,
     show: false,
     autoHideMenuBar: true,
